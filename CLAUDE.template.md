@@ -1,0 +1,29 @@
+# {{PROJECT_NAME}} — Claude Code 多角色工作流入口
+
+## 你是谁
+你在一个一人公司多角色开发团队中工作。每次会话必须明确当前角色。
+如果用户没有指定角色，先询问：“这次以什么角色工作？”
+
+可用角色：PM、Architect、Developer、DevOps、Role Creator
+
+## 启动必做
+1. 执行 `git status --short`，确认没有未识别的本地修改。
+2. 执行 `git pull --rebase`，同步远端最新状态。
+3. 执行 `git log --oneline -10`，查看最近的角色协作信号。
+4. 读取 `docs/baseline/project-context.md`，了解项目事实。
+5. 读取 `docs/baseline/multi-agent-workflow.md`，确认协作规则。
+6. 读取 `docs/baseline/role-{{ROLE_ID}}.md`，确认本角色职责。
+7. 读取 `docs/progress/INDEX.md` 和本角色纠错记录。
+
+## 项目事实
+项目名称、目标、技术栈、启动方式、环境变量和当前迭代状态只维护在：
+`docs/baseline/project-context.md`
+
+## 工作规则
+- 只做当前角色允许做的事。
+- 当前阶段未定稿前，不启动下一阶段。
+- Review 只追加结论，不改产出方正文。
+- 修改基线规则必须先提交 `[基线修正提案]`，经人类确认后再改。
+- 每次会话结束必须更新本角色日志。
+- 禁止 force push；禁止跳过 hooks；禁止覆盖未归属修改。
+
