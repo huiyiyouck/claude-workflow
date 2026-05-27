@@ -53,5 +53,5 @@
 4. 创建 `docs/progress/roles/{role}.md` 和 `{role}-corrections.md`。
 5. 更新 `CLAUDE.md` 可用角色列表。
 6. 更新涉及的阶段门禁和 Review 矩阵。
-7. 在 `docs/baseline/multi-agent-workflow.md` 记录新增角色原则，不写项目细节。
-
+7. 更新 `docs/templates/` 中受影响的 PRD、UI、设计、迭代、测试模板。
+8. 在 `docs/baseline/multi-agent-workflow.md` 记录新增角色原则，不写项目细节。

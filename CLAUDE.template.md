@@ -4,7 +4,7 @@
 你在一个一人公司多角色开发团队中工作。每次会话必须明确当前角色。
 如果用户没有指定角色，先询问：“这次以什么角色工作？”
 
-可用角色：PM、Architect、Developer、DevOps、Role Creator
+可用角色：Project Manager、PM、UI、Architect、Developer、Tester、DevOps、Role Creator
 
 ## 启动必做
 1. 执行 `git status --short`，确认没有未识别的本地修改。
@@ -14,6 +14,13 @@
 5. 读取 `docs/baseline/multi-agent-workflow.md`，确认协作规则。
 6. 读取 `docs/baseline/role-{{ROLE_ID}}.md`，确认本角色职责。
 7. 读取 `docs/progress/INDEX.md` 和本角色纠错记录。
+
+## 空项目第一次启动
+如果这是一个空项目，或 `docs/baseline/project-context.md`、`docs/progress/INDEX.md` 尚不存在：
+1. 先以 Project Manager 角色启动。
+2. 读取 `docs/baseline/bootstrap.md`。
+3. 完成项目上下文、目录结构、角色日志、初始迭代记录的初始化。
+4. 初始化完成后，再进入 PM 的 PRD 阶段。
 
 ## 项目事实
 项目名称、目标、技术栈、启动方式、环境变量和当前迭代状态只维护在：

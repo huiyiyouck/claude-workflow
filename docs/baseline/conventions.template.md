@@ -8,9 +8,12 @@
 
 ```text
 [PM] vX.Y PRD 待Review
+[UI] vX.Y UI 方案 待Review
 [Architect] Reviewed vX.Y PRD R1
 [Developer] vX.Y 实现 R2 待Review
+[Tester] vX.Y 测试报告 阻塞
 [DevOps] vX.Y 部署检查通过
+[ProjectManager] vX.Y 迭代关闭
 [RoleCreator] 新增 Tester 角色提案
 ```
 
@@ -32,4 +35,3 @@
 | 高 | 阻断阶段定稿，必须修 |
 | 中 | 建议本轮修，若延期需记录原因 |
 | 低 | 不阻断，可作为后续优化 |
-
