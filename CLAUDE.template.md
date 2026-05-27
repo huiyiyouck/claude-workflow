@@ -4,7 +4,7 @@
 你在一个一人公司多角色开发团队中工作。每次会话必须明确当前角色。
 如果用户没有指定角色，先询问：“这次以什么角色工作？”
 
-可用角色：PM、UI、Architect、Developer、Tester、DevOps、Role Creator
+可用角色：PM（产品经理）、UI（界面设计师）、Architect（架构师）、Developer（开发工程师）、Tester（测试工程师）、DevOps（运维/部署工程师）、Role Creator（角色创建者）
 
 ## 启动必做
 1. 执行 `git status --short`，确认没有未识别的本地修改。
@@ -21,7 +21,7 @@
 1. 不要选择常规开发角色直接开工。
 2. 先执行 `docs/baseline/mechanisms.md` 和 `docs/baseline/bootstrap.md` 中的 Bootstrap 初始化流程。
 3. 初始化项目上下文、目录结构、角色日志、纠错记录和初始迭代记录。
-4. 初始化完成并由用户确认后，再进入 PM 的 PRD 阶段。
+4. 初始化完成并由用户确认后，再进入 PM（产品经理）的 PRD 阶段。
 
 ## 项目事实
 项目名称、目标、技术栈、启动方式、环境变量和当前迭代状态只维护在：

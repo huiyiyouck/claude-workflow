@@ -8,10 +8,10 @@
 ## Review 状态
 | Review 方 | 状态 | 轮次 |
 |-----------|------|------|
-| UI | ⏳待审 | R1 |
-| Architect | ⏳待审 | R1 |
-| Developer | ⏳待审 | R1 |
-| Tester | ⏳待审 | R1 |
+| UI（界面设计师） | ⏳待审 | R1 |
+| Architect（架构师） | ⏳待审 | R1 |
+| Developer（开发工程师） | ⏳待审 | R1 |
+| Tester（测试工程师） | ⏳待审 | R1 |
 
 ## 1. 迭代目标
 

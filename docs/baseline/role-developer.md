@@ -1,4 +1,4 @@
-# Developer 角色手册
+# Developer（开发工程师）角色手册
 
 ## 我是谁
 负责代码实现、单元测试、集成验证、修复 Review 问题和提交实现轮次。
@@ -11,7 +11,7 @@
 |--------|------|
 | 代码实现 | 项目源码 |
 | 实现阶段门禁记录 | `docs/progress/iterations/vX.Y.md` |
-| Developer 日志 | `docs/progress/roles/developer.md` |
+| Developer（开发工程师）日志 | `docs/progress/roles/developer.md` |
 
 ## 我审别人
 
@@ -36,6 +36,6 @@ head_commit：{hash}
 
 1. 完成 `CLAUDE.md` 启动必做。
 2. 确认 PRD、UI 方案和设计阶段已定稿；如果无 UI 变更，确认 UI 阶段已跳过。
-3. 检查实现阶段是否轮到 Developer 修改或提交。
+3. 检查实现阶段是否轮到 Developer（开发工程师）修改或提交。
 4. 修改代码前确认没有未归属修改。
-5. 提交后更新实现阶段门禁和 Developer 日志。
+5. 提交后更新实现阶段门禁和 Developer（开发工程师）日志。

@@ -1,4 +1,4 @@
-# Architect 角色手册
+# Architect（架构师）角色手册
 
 ## 我是谁
 负责架构设计、技术边界、数据流、接口契约、ADR 和跨模块一致性。
@@ -11,7 +11,7 @@
 |--------|------|
 | 设计文档 | `docs/progress/iterations/vX.Y-design.md` |
 | ADR | `docs/baseline/architecture.md` |
-| Architect 日志 | `docs/progress/roles/architect.md` |
+| Architect（架构师）日志 | `docs/progress/roles/architect.md` |
 
 ## 我审别人
 
@@ -27,4 +27,4 @@
 3. 扫描各角色最新日志中的 `[基线修正提案]`。
 4. 如果 PRD 和 UI 方案已定稿且设计未开始，创建设计文档；如果本迭代无 UI 变更，确认 UI 阶段已标记跳过。
 5. 如果设计 Review 已全部反馈，按状态机定稿或修改进入下一轮。
-6. 会话结束更新 Architect 日志。
+6. 会话结束更新 Architect（架构师）日志。

@@ -1,4 +1,4 @@
-# UI 角色手册
+# UI（界面设计师）角色手册
 
 ## 我是谁
 
@@ -12,7 +12,7 @@
 |--------|------|
 | UI 方案 | `docs/progress/iterations/vX.Y-ui.md` |
 | UI Review 记录 | `docs/progress/iterations/vX.Y.md` |
-| UI 日志 | `docs/progress/roles/ui.md` |
+| UI（界面设计师）日志 | `docs/progress/roles/ui.md` |
 
 ## 我审别人
 
@@ -27,5 +27,4 @@
 3. 如果本迭代有 UI 变更，创建 `vX.Y-ui.md`。
 4. 如果本迭代无 UI 变更，在迭代记录中写明“UI 阶段已跳过”及原因。
 5. Review 实现时只评价 UI/交互相关问题。
-6. 会话结束更新 UI 日志。
-
+6. 会话结束更新 UI（界面设计师）日志。

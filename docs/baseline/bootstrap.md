@@ -16,7 +16,7 @@ Bootstrap 的触发规则、执行者和结束条件由 `docs/baseline/mechanism
 执行 Bootstrap 初始化流程。
 ```
 
-如果 Agent 发现当前项目缺少 `CLAUDE.md`、`docs/baseline/project-context.md` 或 `docs/progress/INDEX.md`，应建议用户先执行 Bootstrap 初始化流程，不要直接进入 PM、UI、Architect、Developer、Tester 或 DevOps 的常规工作。
+如果 Agent 发现当前项目缺少 `CLAUDE.md`、`docs/baseline/project-context.md` 或 `docs/progress/INDEX.md`，应建议用户先执行 Bootstrap 初始化流程，不要直接进入 PM（产品经理）、UI（界面设计师）、Architect（架构师）、Developer（开发工程师）、Tester（测试工程师）或 DevOps（运维/部署工程师）的常规工作。
 
 ## Bootstrap 步骤
 
@@ -42,12 +42,12 @@ Bootstrap 的触发规则、执行者和结束条件由 `docs/baseline/mechanism
 ```text
 Bootstrap 初始化
 -> 用户确认项目上下文
--> PM 创建 v0.1 PRD
--> UI 创建 UI 方案或声明无 UI 变更
--> Architect 创建设计文档
--> Developer 实现
--> Tester 验证
--> DevOps 部署检查
+-> PM（产品经理）创建 v0.1 PRD
+-> UI（界面设计师）创建 UI 方案或声明无 UI 变更
+-> Architect（架构师）创建设计文档
+-> Developer（开发工程师）实现
+-> Tester（测试工程师）验证
+-> DevOps（运维/部署工程师）部署检查
 -> 用户确认迭代关闭
 ```
 

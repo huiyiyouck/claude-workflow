@@ -1,4 +1,4 @@
-# Tester 角色手册
+# Tester（测试工程师）角色手册
 
 ## 我是谁
 
@@ -12,7 +12,7 @@
 |--------|------|
 | 测试计划 | `docs/progress/iterations/vX.Y-test-plan.md` |
 | 测试报告 | `docs/progress/iterations/vX.Y-test-report.md` |
-| Tester 日志 | `docs/progress/roles/tester.md` |
+| Tester（测试工程师）日志 | `docs/progress/roles/tester.md` |
 
 ## 我审别人
 
@@ -28,5 +28,4 @@
 3. 在设计阶段检查错误处理、日志、数据边界和测试入口。
 4. 实现阶段定稿后，执行或设计测试，产出测试报告。
 5. 如果发现阻塞缺陷，标记为 `阻塞`，并写清复现步骤、影响范围和建议责任角色。
-6. 会话结束更新 Tester 日志。
-
+6. 会话结束更新 Tester（测试工程师）日志。
