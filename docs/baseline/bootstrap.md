@@ -4,6 +4,8 @@
 
 空项目第一次启动时，不应该直接让 Developer 写代码，也不应该直接让 PM 写完整 PRD。第一步应该执行 Bootstrap 初始化流程，让后续角色有共同入口、共同状态和共同文件结构。
 
+Bootstrap 只代表“团队工作台已安装”，不代表已经启动标准迭代。
+
 这不是一个常驻项目经理角色。人类用户是项目 Owner（负责人）和实际项目经理；Bootstrap 只是一次性初始化机制。
 
 Bootstrap 的触发规则、执行者和结束条件由 `docs/baseline/mechanisms.md` 统一定义。本文件只描述 Bootstrap 的具体执行步骤。
@@ -34,9 +36,9 @@ Bootstrap 的触发规则、执行者和结束条件由 `docs/baseline/mechanism
 3. 从 `docs/baseline/project-context.template.md` 生成 `docs/baseline/project-context.md`，只填写项目事实，不写当前阶段等动态状态。
    - 如果用户已经提供项目事实，写入对应字段。
    - 如果用户暂时没有想好项目，允许保留 `待填写` 占位，不阻塞目录结构初始化。
-   - 项目事实未确认时，不进入 PRD 正式产出；Bootstrap 完成后的下一步是“补充或确认项目上下文”。
+   - 项目事实未确认时，不进入 PRD 正式产出；Bootstrap 完成后的下一步是询问用户是否需要以某个角色或工作模式继续。
 4. 基于 `docs/templates/progress-index.md` 创建或确认 `docs/progress/INDEX.md`，作为项目级当前状态入口。
-5. 基于 `docs/templates/iteration.md` 创建初始迭代记录 `docs/progress/iterations/v0.1.md`，状态为 `PRD 阶段待启动`。
+5. 创建 `docs/progress/iterations/`、`docs/progress/ad-hoc/`、`docs/progress/archive/` 等进度目录，但不要默认创建 `v0.1` 迭代。
 6. 基于 `docs/templates/role-log.md` 和 `docs/templates/role-corrections.md` 创建角色日志和纠错记录：
    - `pm.md` / `pm-corrections.md`
    - `ui.md` / `ui-corrections.md`
@@ -45,23 +47,25 @@ Bootstrap 的触发规则、执行者和结束条件由 `docs/baseline/mechanism
    - `tester.md` / `tester-corrections.md`
    - `devops.md` / `devops-corrections.md`
 7. 不要向所有角色日志写重复的 Bootstrap 初始化记录；角色日志只创建初始模板，等该角色真正工作时再写日志。
-8. 在 `docs/progress/INDEX.md` 记录 Bootstrap 结果和下一步建议。
+8. 在 `docs/progress/INDEX.md` 记录 Bootstrap 结果和下一步入口：询问用户是否需要以某个角色或工作模式继续。
 9. 如果当前是 Git 仓库，提交初始 Bootstrap commit；如果用户选择暂不初始化 Git，记录“未提交：非 Git 仓库”。
 
-## Bootstrap 完成后的推荐顺序
+## Bootstrap 完成后的分流
+
+Bootstrap 完成后，Agent 不自动启动迭代，而是询问用户：
 
 ```text
-Bootstrap 初始化
--> 用户确认项目上下文
--> PM（产品经理）创建 v0.1 PRD
--> UI（界面设计师）创建 UI 方案或声明无 UI 变更
--> Architect（架构师）创建设计文档
--> Developer（开发工程师）实现
--> Tester（测试工程师）验证
--> DevOps（运维/部署工程师）部署检查
--> 迭代关闭检查
--> 收尾归档
+工作台已初始化。你现在需要以某个角色继续工作吗？
+可选：PM（产品经理）、UI（界面设计师）、Architect（架构师）、Developer（开发工程师）、Tester（测试工程师）、DevOps（运维/部署工程师）、Role Creator（角色创建者）。
+如果暂时不需要，我们可以继续普通聊天，或到这里收尾。
 ```
+
+分流规则：
+
+- 用户选择标准迭代：通常由 PM（产品经理）创建迭代目标和 PRD，再按标准迭代流程推进。
+- 用户选择非迭代工作：按 `work-modes.md` 选择 Product Brief、UI Concept、Tech Spike、Bugfix、Ops Task 等模式。
+- 用户只想聊天或暂时没有项目：不创建迭代、不创建 ad-hoc 记录，保持普通对话。
+- 用户要求收尾：执行收尾归档机制。
 
 ## 不允许做的事
 
@@ -70,7 +74,8 @@ Bootstrap 初始化
 - 不允许在没有项目上下文时编造技术栈；未知内容写 `待填写`。
 - 不允许跳过 `project-context.md`。
 - 不允许因为项目事实暂时未知就拒绝创建项目骨架。
-- 不允许手写简化版迭代记录，必须基于 `docs/templates/iteration.md`。
+- 不允许 Bootstrap 默认创建 `v0.1` 迭代；只有用户选择标准迭代时，才基于 `docs/templates/iteration.md` 创建迭代记录。
 - 不允许把当前阶段等动态状态写入 `project-context.md`。
 - 不允许给所有角色日志追加重复 Bootstrap 流水账。
+- 不允许 Bootstrap 完成后默认进入 PM（产品经理）PRD 阶段。
 - 不允许把 Bootstrap 写成当前项目专属内容；它必须保持可复用。
