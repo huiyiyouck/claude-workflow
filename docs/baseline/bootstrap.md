@@ -57,12 +57,13 @@ Bootstrap 完成后，Agent 不自动启动迭代，而是询问用户：
 ```text
 工作台已初始化。你现在需要以某个角色继续工作吗？
 可选：PM（产品经理）、UI（界面设计师）、Architect（架构师）、Developer（开发工程师）、Tester（测试工程师）、DevOps（运维/部署工程师）、Role Creator（角色创建者）。
+如果要启动标准迭代，应由 PM（产品经理）创建 PRD；如果只是让某个角色处理临时任务，可以走非迭代自主任务。
 如果暂时不需要，我们可以继续普通聊天，或到这里收尾。
 ```
 
 分流规则：
 
-- 用户选择标准迭代：通常由 PM（产品经理）创建迭代目标和 PRD，再按标准迭代流程推进。
+- 用户选择标准迭代：必须由 PM（产品经理）创建迭代目标和 PRD，再按标准迭代流程推进。
 - 用户选择非迭代工作：按 `work-modes.md` 选择 Product Brief、UI Concept、Tech Spike、Bugfix、Ops Task 等模式。
 - 用户只想聊天或暂时没有项目：不创建迭代、不创建 ad-hoc 记录，保持普通对话。
 - 用户要求收尾：执行收尾归档机制。
@@ -75,6 +76,7 @@ Bootstrap 完成后，Agent 不自动启动迭代，而是询问用户：
 - 不允许跳过 `project-context.md`。
 - 不允许因为项目事实暂时未知就拒绝创建项目骨架。
 - 不允许 Bootstrap 默认创建 `v0.1` 迭代；只有用户选择标准迭代时，才基于 `docs/templates/iteration.md` 创建迭代记录。
+- 不允许非 PM（产品经理）角色在 Bootstrap 后直接创建标准迭代；其他角色只能提出迭代建议或执行非迭代自主任务。
 - 不允许把当前阶段等动态状态写入 `project-context.md`。
 - 不允许给所有角色日志追加重复 Bootstrap 流水账。
 - 不允许 Bootstrap 完成后默认进入 PM（产品经理）PRD 阶段。
