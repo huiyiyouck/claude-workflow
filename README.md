@@ -1,6 +1,6 @@
-# Claude Code One-Person Company Workflow
+# claude-workflow
 
-一套面向“一人公司”的 Claude Code 多角色开发团队工作流。它的目标不是制造复杂流程，而是让同一个人可以按角色启动不同 Claude Code 会话，稳定完成从产品定义、架构设计、实现、Review、部署检查到复盘纠错的闭环。
+一套面向”一人公司”的 Claude Code 多角色开发团队工作流。它的目标不是制造复杂流程，而是让同一个人可以按角色启动不同 Claude Code 会话，稳定完成从产品定义、架构设计、实现、Review、部署检查到复盘纠错的闭环。
 
 这套工作流适合复制到任何 Claude Code 项目中使用。项目自己的业务背景、技术栈、启动方式和业务边界写入 `docs/baseline/project-context.md`，当前迭代状态写入 `docs/progress/INDEX.md` 和 `docs/progress/iterations/`，通用协作规则保持不变。
 
