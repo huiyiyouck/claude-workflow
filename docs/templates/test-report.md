@@ -5,7 +5,7 @@
 - Review 轮次：R1
 - 关联迭代：
 
-<!-- 从 docs/templates/review-plan.md 插入 Review 计划和 Review 状态区块 -->
+> **Review 计划和 Review 状态：** 从 `docs/templates/review-plan.md` 复制以上区块到此位置。
 
 ## 结论
 - 最终判定：通过 / 阻塞 / 有条件通过

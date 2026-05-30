@@ -61,7 +61,9 @@
 
 1. 完成 `CLAUDE.md` 启动必做。
 2. 如果 `docs/progress/roles/ui.md` 不存在，从 `docs/templates/role-log.md` 创建。
-3. 工作模式由 runtime.md 路由判断。UI 在标准迭代中产出 UI 方案，在非迭代中沉淀 UI 草案。
+3. 判断本次出场场景：
+   - 被指定为其他阶段的 Review 方 → 读被 Review 的文档，只审自己职责边界内的问题。Review 完成后在文档 Review 记录区域追加结论，并更新 `vX.Y.md` 中对应 Review 结果。
+   - 产出 UI 方案 / UI 草案 → 继续步骤 4
 4. 标准迭代中，先读 `vX.Y.md` 确认 PRD 已定稿。
 5. 有 UI 变更时创建 `vX.Y-ui.md`；无 UI 变更时在迭代记录中写明原因并标记跳过。
 6. Review 实现时只评价 UI/交互相关问题。

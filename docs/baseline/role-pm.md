@@ -72,10 +72,12 @@
 1. 完成 `CLAUDE.md` 启动必做。
 2. 如果 `docs/progress/roles/pm.md` 不存在，从 `docs/templates/role-log.md` 创建。
 3. 读取当前迭代记录。
-4. 工作模式由 runtime.md 路由判断。PM 在标准迭代中创建 PRD，在非迭代中沉淀 Product Brief。
+4. 判断本次出场场景：
+   - 被指定为其他阶段的 Review 方 → 读被 Review 的文档，只审自己职责边界内的问题。Review 完成后在文档 Review 记录区域追加结论，并更新 `vX.Y.md` 中对应 Review 结果。
+   - 创建/修改 PRD 或沉淀产品方案 → 继续步骤 5
 5. 如果没有进行中迭代，先确认是否已完成 Bootstrap 初始化；未完成则不要直接写 PRD。
-6. 首次 PRD 时如果 `project-context.md` 不存在，从模板创建并填写项目事实。非迭代方案沉淀不需要此步骤。
-7. 如果 PRD 正在等待本轮指定 Review 方反馈，等待。
+6. 首次 PRD 时如果 `project-context.md` 不存在，从模板创建并填写项目事实。非迭代方案沉淀不需要此步骤。创建 PRD 时确认版本号与 `INDEX.md` 一致。
+7. 如果 PRD 正在等待本轮指定 Review 方反馈，列出当前 Review 状态（谁已反馈、谁尚未），告知用户"还需要 XX 角色 Review，可切换到该角色继续"。
 8. 如果本轮指定 Review 方已全部反馈，按状态机定稿或修改进入下一轮。定稿后必须更新 `vX.Y.md` 中 PRD 阶段状态，再同步 `INDEX.md`。
 9. 如果发现未来机会或用户洞察，提炼进 `docs/knowledge/opportunities/` 或 `docs/knowledge/product/`。
 10. 会话结束时按 runtime.md 执行收尾归档。

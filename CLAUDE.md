@@ -44,6 +44,6 @@
 进入团队模式后：
 
 1. 先执行 `git rev-parse --is-inside-work-tree` 判断当前目录是否为 Git 仓库。
-2. 如果是 Git 仓库，执行 `git status --short`。如果工作区干净且 `git log @{u}..HEAD --oneline` 为空（无未推送 commit），再执行 `git pull --rebase`；否则只执行 `git fetch` 并提醒用户当前有未同步变更。最后执行 `git log --oneline -10`。
+2. 如果是 Git 仓库，执行 `git status --short`。如果工作区干净且 `git log @{u}..HEAD --oneline` 为空（无未推送 commit），再执行 `git pull --rebase`；否则只执行 `git fetch` 并提醒用户当前有未同步变更。如果 pull 或 fetch 失败（网络不通、无远端等），记录原因并继续，不要阻塞启动。最后执行 `git log --oneline -10`。
 3. 如果不是 Git 仓库，不执行 `git status`、`git pull` 或 `git log`，只记录"当前目录不是 Git 仓库"。Bootstrap 时再询问用户是否初始化 Git。
 4. 读取 `docs/baseline/runtime.md`。后续一切加载、路由、角色选择、初始化判断、工作模式分流和规则约束均由 `runtime.md` 决定。
