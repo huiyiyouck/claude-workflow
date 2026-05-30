@@ -5,7 +5,7 @@
 - Review 轮次：R1
 - 关联 PRD：
 
-> **Review 计划和 Review 状态：** 从 `docs/templates/review-plan.md` 复制以上区块到此位置。
+> 从此处插入 Review 计划、Review 状态和 Review 记录三个区块，内容见 `docs/templates/review-plan.md`
 
 ## 1. 概述
 

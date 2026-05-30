@@ -5,9 +5,7 @@
 - Review 轮次：R1
 - 关联迭代：vX.Y
 
-> **Review 计划和 Review 状态：** 从 `docs/templates/review-plan.md` 复制以下区块到此位置：
-> - Review 计划（含 Review 模式、影响领域、指定 Review 方、定稿条件）
-> - Review 状态表（Review 方 | 指定原因 | 状态 | 轮次）
+> 从此处插入 Review 计划、Review 状态和 Review 记录三个区块，内容见 `docs/templates/review-plan.md`
 
 ## 1. 迭代目标
 

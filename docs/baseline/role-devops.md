@@ -61,7 +61,9 @@
 
 1. 完成 `CLAUDE.md` 启动必做。
 2. 如果 `docs/progress/roles/devops.md` 不存在，从 `docs/templates/role-log.md` 创建。
-3. 工作模式由 runtime.md 路由判断。
+3. 判断本次出场场景：
+   - 被指定为其他阶段的 Review 方 → 读被 Review 的文档，只审部署方式、环境变量、云服务、发布风险。Review 完成后在文档 Review 记录区域追加结论，并更新 `vX.Y.md` 中对应 Review 结果。
+   - 执行部署检查 / 独立运维任务 → 继续步骤 4
 4. 标准迭代中，先读 `vX.Y.md` 确认实现和测试阶段已定稿。
 5. 独立运维任务按 `work-modes.md` Ops Task 模式执行。
 6. 执行部署检查，写入状态、证据和阻塞项。

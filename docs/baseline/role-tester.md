@@ -56,15 +56,9 @@
 
 1. 完成 `CLAUDE.md` 启动必做。
 2. 如果 `docs/progress/roles/tester.md` 不存在，从 `docs/templates/role-log.md` 创建。
-3. 工作模式由 runtime.md 路由判断。Tester 有两种出场场景：
-
-**作为 Reviewer：** 被指定为 PRD/设计/UI Review 方时，只审自己职责边界内的问题（参见"我审别人"）。
-
-**作为主执行者：**
-a. 确认 `vX.Y.md` 中实现阶段已定稿
-b. 产出测试计划 → 执行测试 → 产出测试报告
-c. Bugfix 验证：记录复现、验证步骤、结果
-d. 阻塞缺陷标记 `阻塞`，写清复现步骤和建议责任角色
-
-4. 产生测试经验时提炼进 `docs/knowledge/testing/`。
-5. 会话结束时按 runtime.md 执行收尾归档。
+3. 判断本次出场场景：
+   - 被指定为其他阶段的 Review 方 → 读被 Review 的文档，只审自己职责边界内的问题。Review 完成后在文档 Review 记录区域追加结论，并更新 `vX.Y.md` 中对应 Review 结果。
+   - 实现阶段已定稿，执行测试 / Bugfix 验证 → 继续步骤 4
+4. 确认 `vX.Y.md` 中实现阶段已定稿。产出测试计划 → 执行测试 → 产出测试报告。Bugfix 验证记录复现、验证步骤、结果。阻塞缺陷标记 `阻塞`，写清复现步骤和建议责任角色。
+5. 产生测试经验时提炼进 `docs/knowledge/testing/`。
+6. 会话结束时按 runtime.md 执行收尾归档。
