@@ -113,7 +113,7 @@
 4. 更新 `CLAUDE.md` 可用角色列表和触发语。
 5. 更新 `multi-agent-workflow.md` 角色矩阵和阶段门禁。
 6. 更新 `docs/templates/` 中受影响的模板。
-7. 会话结束执行收尾归档。
+7. 会话结束时按 runtime.md 执行收尾归档。
 
 ## 启动检查
 
