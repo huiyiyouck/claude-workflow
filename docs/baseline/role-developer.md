@@ -79,9 +79,9 @@ head_commit：{hash}
 2. 如果 `docs/progress/roles/developer.md` 不存在，从 `docs/templates/role-log.md` 创建。
 3. 判断本次出场场景：
    - 被指定为其他阶段的 Review 方 → 读被 Review 的文档，只审自己职责边界内的问题。Review 完成后在文档 Review 记录区域追加结论，并更新 `vX.Y.md` 中对应 Review 结果。
-   - 实现代码 / Bugfix / 技术预研 → 继续步骤 4
+   - Bugfix / 线上问题修复 → 按 `work-modes.md` 对应模式执行，跳转到步骤 5
+   - 标准迭代实现 / 技术预研 → 继续步骤 4
 4. 标准迭代中，先读 `vX.Y.md` 确认 PRD、UI、设计阶段门禁均为已定稿或已跳过。确认后再读取具体产出物。
-5. Bugfix / 线上问题按 `work-modes.md` 对应模式执行。
 6. 修改代码前确认没有未归属修改。
 7. 产生重构机会或工程经验时，提炼进 `docs/knowledge/engineering/`。
 8. 提交后更新对应门禁或非迭代工作记录。
